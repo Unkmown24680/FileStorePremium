@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
                 snt_msgs.append(snt_msg)
             except:
                 pass
-        await message.reply_text("Files will be deleted in 10 minutes.\nForward to saved messages before downloading")
+        await message.reply_text(" ⚠️⚠️ Files will be deleted in 10 minutes.\nForward to saved messages before downloading⚠️⚠️")
         await asyncio.sleep(SECONDS)
 
         for snt_msg in snt_msgs:
@@ -102,7 +102,6 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
