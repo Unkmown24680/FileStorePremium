@@ -41,8 +41,7 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}</b>\n\nThis is a Permanent FileStore Bot. 
-Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edit Permission, I will add save Uploaded File in Channel and Share a Shareable Link. <a href=https://graph.org/file/6ef6eb1f0aed4920adaf2.jpg>🫣.</a></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hi!! {first}</b>\n\nThis is a Permanent FileStore Bot.Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edit Permission, I will add save Uploaded File in Channel and Share a Shareable Link. <a href=https://graph.org/file/6ef6eb1f0aed4920adaf2.jpg>🫣.</a></b>")
 try:
     ADMINS=[6972781306]
     for x in (os.environ.get("ADMINS", "").split()):
