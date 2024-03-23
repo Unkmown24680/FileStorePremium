@@ -10,22 +10,22 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6844733316:AAFpJx1hE6OlpMrlwB3-OwLg-C689oiYWPc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7112434071:AAG-7OXeHL0sDYGYT6EUb18FGhKZyCqJNDw")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "28625475"))
+APP_ID = int(os.environ.get("APP_ID", "28634734"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "da4894b36ca60168ba283519ed551606")
+API_HASH = os.environ.get("API_HASH", "c2ca2adbae98bfd89bcf8b65b7aa92b7")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001564274544"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002022234984"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "unknown")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1720819569"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6972781306"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
@@ -41,9 +41,13 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}</b>\n\nI can provide files for @Team_Netflix & @Anime_Cruise_Netflix\nchannel Members!!\n\nᴊᴜꜱᴛ ᴅᴏɴ'ᴛ ᴏᴠᴇʀʟᴏᴀᴅ ᴍᴇ <a href=https://graph.org/file/6ef6eb1f0aed4920adaf2.jpg>🫣.</a></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
+
+How to Use Bot ??
+
+📢 Send me any File & It will be uploaded in My Database & You will Get the File Link. <a href=https://graph.org/file/6ef6eb1f0aed4920adaf2.jpg>🫣.</a></b>")
 try:
-    ADMINS=[6376328008]
+    ADMINS=[6972781306]
     for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
@@ -53,7 +57,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "👋 Hello {first}!\nTo access these files you have to join our channel first.\nPlease subscribe to our channels through the buttons below and then tap on try again to get your files.\nThank You ❤️")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>By @team_netflix</a>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>By </a>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
@@ -65,7 +69,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1720819569)
+ADMINS.append(6972781306)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
